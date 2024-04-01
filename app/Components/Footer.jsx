@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-16 px-8">
+    <footer className=" py-16 ">
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">Ritesh's Portfolio</h2>
@@ -15,7 +15,7 @@ const Footer = () => {
             future.
           </p>
         </div>
-        <div className="w-full md:w-1/3 mb-8 md:mb-0">
+        <div className="w-full px-8 md:w-1/3 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="list-none mt-4">
             <li>
