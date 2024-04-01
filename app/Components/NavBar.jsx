@@ -18,14 +18,14 @@ const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-inherit px-8">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-inherit  xl:px-8">
       <div className="flex flex-wrap items-center justify-between mx-auto xl:px-4 py-2">
         {/* Replace with your logo image */}
-        <Link href="/" className="w-auto">
-          <img src="/Images/logo.png" alt="Your Logo" className="w-auto h-16 md:h-24 " />
+        <Link href="/" className="w-auto ">
+          <img src="/Images/logo.png" alt="Your Logo" className="w-auto h-16 sm:px-5 md:h-24 " />
         </Link>
 
-        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3}} className="mobile-menu block md:hidden">
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.3}} className="mobile-menu block md:hidden mr-3">
           {navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(false)}
