@@ -29,9 +29,9 @@ const SkillsSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="skills" className="min-h-screen bg-[#272727] ">
+    <section id="skills" className="min-h-screen bg-[#272727] px-12 ">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-5xl font-bold text-white mb-8 text-center">
+        <h1 className="text-4xl font-bold text-white mb-8 text-center">
           My Skills
         </h1>
         <motion.div
@@ -40,7 +40,7 @@ const SkillsSection = () => {
           initial="initial"
           animate={isInView ? "animate" : "initial"} // Use skillsVariants here
           transition={{ duration: 0.2 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center py-5 "
         >
           {skillData.map((skill, index) => (
             <motion.div

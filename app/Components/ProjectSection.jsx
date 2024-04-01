@@ -49,8 +49,8 @@ function ProjectSection() {
 
   return (
     <section  className="p-8">
-      <h2 className="text-center text-4xl font-bold text-white mt-4">My Projects</h2>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <h2 className="text-center text-4xl font-bold text-white  py-5">My Projects</h2>
+      <ul ref={ref} className="grid py-7 md:grid-cols-3 gap-8 md:gap-12">
         {projectData.map((project, index) => (
           <motion.li
             key={index}

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=" py-16 ">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between">
+    <footer className=" py-16  ">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between px-5 ">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">Ritesh's Portfolio</h2>
           <p className="text-lg leading-relaxed">
@@ -15,13 +15,13 @@ const Footer = () => {
             future.
           </p>
         </div>
-        <div className="w-full px-8 md:w-1/3 mb-8 md:mb-0">
+        <div className="w-full xl:px-8 lg:px-8 md:w-1/3 mb-8 md:mb-0">
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="list-none mt-4">
             <li>
               <a
                 href="#hithere"
-                className="text-lg hover:text-blue-500 transition duration-300 ease-in-out"
+                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
                 Hi, There
               </a>
@@ -29,7 +29,7 @@ const Footer = () => {
             <li>
               <a
                 href="#about"
-                className="text-lg hover:text-blue-500 transition duration-300 ease-in-out"
+                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
                 About
               </a>
@@ -37,7 +37,7 @@ const Footer = () => {
             <li>
               <a
                 href="#education"
-                className="text-lg hover:text-blue-500 transition duration-300 ease-in-out"
+                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
                 Education
               </a>
@@ -45,7 +45,7 @@ const Footer = () => {
             <li>
               <a
                 href="#skills"
-                className="text-lg hover:text-blue-500 transition duration-300 ease-in-out"
+                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
                 Skills
               </a>
@@ -53,7 +53,7 @@ const Footer = () => {
             <li>
               <a
                 href="#projects"
-                className="text-lg hover:text-blue-500 transition duration-300 ease-in-out"
+                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
                 Projects
               </a>

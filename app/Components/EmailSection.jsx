@@ -33,7 +33,7 @@ const EmailSection = () => {
     }
   }
   return (
-    <section className="ContactMe bg-gradient-to-r from-[#c5c0c1] to-[#8e779a] flex justify-center items-center h-screen">
+    <section className="ContactMe bg-gradient-to-r from-[#d3c7dbd7] to-[#9034c29e] flex justify-center items-center h-screen">
       <motion.form
         ref={formRef}
         variants={formVariants}
@@ -43,7 +43,7 @@ const EmailSection = () => {
         className="border-4 border-[#17131372] shadow-[#17131372] bg-[#d6d4d9ca]  shadow-md flex flex-col justify-center items-center  sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-xl lg:w-auto xl:w-6/12" // Adjust width for larger screens
         style={{ height: 'calc(10/12 * 100vh)' }}
       >
-        <h1 className="text-4xl text-[#152123] font-bold mb-8">Get in Touch...</h1>
+        <div className="text-4xl  text-left text-[#152123]  font-bold mb-8  "><h1 >Get in Touch...</h1> </div>
         <input className="bg-[#A9A7B5] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='namee' type="text" id="namee" placeholder="Your name" required />
         <input className="bg-[#A9A7B5] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='email' type="email" id="email" placeholder="Your email" required />
         <input className="bg-[#A9A7B5] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='phone' type="text" id="phone" placeholder="Your Phone no." required />
