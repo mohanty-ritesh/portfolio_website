@@ -97,7 +97,7 @@ const Footer = () => {
               <Image src="/Images/telegram.png" alt="Telegram" className="filter invert"width={32} height={32} />
             </a>
             <a href="mailto:mohantyritesh811@gmail.com" target="_blank" rel="noreferrer">
-              <Image src="/Images/gm.png  " className="filter invert" alt="Gmail" width={32} height={32} />
+              <Image src="/Images/gm.png" className="filter invert" alt="Gmail" width={32} height={32} />
             </a>
           </div>
         </div>
