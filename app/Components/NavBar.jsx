@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-inherit px-8">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex flex-wrap items-center justify-between mx-auto xl:px-4 py-2">
         {/* Replace with your logo image */}
         <Link href="/" className="w-auto">
           <img src="/Images/logo.png" alt="Your Logo" className="w-auto h-16 md:h-24 " />
@@ -31,14 +31,14 @@ const NavBar = () => {
               onClick={() => setNavbarOpen(false)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200"
             >
-              <Bars3Icon className="h-5 w-5" />
+              <XMarkIcon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(true)}
               className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white text-slate-200"
             >
-              <XMarkIcon className="h-5 w-5" />
+              < Bars3Icon className="h-5 w-5" />
             </button>
           )}
         </motion.div>
