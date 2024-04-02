@@ -33,7 +33,7 @@ const EmailSection = () => {
     }
   }
   return (
-    <section className=" px-3 bg-gradient-to-r from-[#151414] to-[#8c0dd09b] flex justify-center items-center h-screen">
+    <section className=" px-3 py-5 bg-gradient-to-r from-[#d5ced6] to-[#c87ff0a4] flex justify-center items-center h-screen">
       <motion.form
         ref={formRef}
         variants={formVariants}
@@ -44,10 +44,10 @@ const EmailSection = () => {
         // style={{ height: 'calc(10/12 * 100vh)' }}
       >
         <div className="xl:text-4xl text-2xl md:text-3xl text-left text-[#152123]  font-bold mb-8  "><h1 >Get in Touch...</h1> </div>
-        <input className="text-xl bg-[#dad7d9] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='namee' type="text" id="namee" placeholder="Your name" required />
-        <input className="text-xl bg-[#dad7d9] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='email' type="email" id="email" placeholder="Your email" required />
-        <input className="text-xl bg-[#dad7d9] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='phone' type="text" id="phone" placeholder="Your Phone no." required />
-        <textarea className=" bg-[#dad7d9] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-3 px-3 h-60 resize-none placeholder-gray-600 w-full" name='message' id="message" placeholder="Your Message..." ></textarea>
+        <input className="text-xl bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='namee' type="text" id="namee" placeholder="Your name" required />
+        <input className="text-xl bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='email' type="email" id="email" placeholder="Your email" required />
+        <input className="text-xl bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='phone' type="text" id="phone" placeholder="Your Phone no." required />
+        <textarea className=" bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-3 px-3 h-60 resize-none placeholder-gray-600 w-full" name='message' id="message" placeholder="Your Message..." ></textarea>
         <input className="border-2 border-[#630817] font-bold rounded-3xl bg-[#f25454] text-[#630817] px-8 py-2 my-5 hover:cursor-pointer" type="button" value="Button" onClick={handleSubmit} />
       </motion.form>
     </section>
