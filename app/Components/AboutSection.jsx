@@ -103,9 +103,9 @@ function AboutSection() {
         >
           <Image
             src="/Images/myimg-removebg-preview.png"
-            width={400}
-            height={400}
-            className="rounded-full hidden  lg:block xl:block "
+            width={300}
+            height={300}
+            className="rounded-full hidden  md:block md:w-80 xl:w-[400px]  md:pl-13 lg:block xl:block "
             alt="Your Profile Picture"
           />
         </motion.div>
@@ -115,7 +115,7 @@ function AboutSection() {
           transition={{ duration: 0.3 }}
           className="md:mr-8"
         >
-          <h2 className="text-5xl font-bold text-white mb-8">About Me</h2>
+          <h2 className="text-5xl font-bold text-white xl:mb-5">About Me</h2>
           <div className="  lg:pt-5 pt-10">
             <p className="text-base lg:text-lg">
               Lorem, ipslorem4um Lorem ipsum dolor sit amet consectetur
