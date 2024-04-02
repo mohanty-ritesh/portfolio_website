@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="h-[86vh] flex justify-center pt-20 lg:pt-2 ">
+    <section className="h-[86vh] flex justify-center pt-18 lg:pt-2 ">
       <div className="grid grid-cols-1 sm:grid-cols-12 ">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
