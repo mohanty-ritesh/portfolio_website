@@ -33,7 +33,7 @@ const EmailSection = () => {
     }
   }
   return (
-    <section className=" px-3 py-5 bg-gradient-to-r from-[#d5ced6] to-[#c87ff0a4] flex justify-center items-center h-screen">
+    <section className=" px-3 py-2 bg-gradient-to-r from-[#d5ced6] to-[#c87ff0a4] flex justify-center items-center h-screen">
       <motion.form
         ref={formRef}
         variants={formVariants}
