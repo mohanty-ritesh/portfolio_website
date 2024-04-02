@@ -47,7 +47,7 @@ function HeroSection() {
             Download my cv
           </button>
         </motion.div>
-       <div className="col-span-5 place-self-center pb-4 pl-6 mt-auto  ml-3 lg:mt-0 overflow-hidden">
+       <div className="col-span-5 place-self-center pb-4 mt-auto  ml-3 lg:mt-0 overflow-hidden">
   <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
