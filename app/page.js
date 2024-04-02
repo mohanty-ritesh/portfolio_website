@@ -19,7 +19,7 @@ export default function Home() {
       <div className="container mx-auto    bg-[#212022]  rounded-md"> <EmailSection /></div>
       {/* <div className="container mx-auto    bg-[#212022]  rounded-md"> <Rr/></div> */}
       <div className="container mx-auto  text-[#c4acd0e8]  bg-[#121212] "> <Footer /></div>
-      <div><h2 className="bg-[#121212] text-[#585653e0] text-center py-1">© This Portfolio is Made By Ritesh Mohanty --♥--</h2></div>
+      <div><h2 className="bg-[#121212] text-[#585653e0] sm:text-base text-center py-1">© This Portfolio is Made By Ritesh Mohanty --♥--</h2></div>
     </main>
   );
 }
