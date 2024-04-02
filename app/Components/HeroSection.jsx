@@ -52,7 +52,7 @@ function HeroSection() {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.2 }}
-    className="rounded-full  sm:block bg-[#181818]   w-[300px] h-[300px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[400px] relative overflow-visible"
+    className="rounded-full  sm:block   w-[300px] h-[300px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[400px] relative "
   >
     <Image
       src="/Images/reps.png"
