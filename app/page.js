@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className="container mx-auto  py-4  bg-[#212022]  rounded-md"> <AboutSection /></div>
       <div className="container mx-auto    bg-[#212022]  rounded-md"> <SkillsSection /></div>
-      <div className="container mx-auto px-12 py-4  bg-[#212022]  rounded-md"> <ProjectSection /></div>
+      <div className="container mx-auto px-10 py-4  bg-[#212022]  rounded-md"> <ProjectSection /></div>
       <div className="container mx-auto    bg-[#212022]  rounded-md"> <EmailSection /></div>
       <div className="container mx-auto  text-[#c4acd0e8]  bg-[#121212] "> <Footer /></div>
       <div><h2 className="bg-[#121212] text-[#585653e0] text-center py-1">© This Portfolio is Made By Ritesh Mohanty --♥--</h2></div>

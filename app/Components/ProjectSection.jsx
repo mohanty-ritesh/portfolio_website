@@ -48,9 +48,9 @@ function ProjectSection() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section  className="p-8">
+    <section  className="lg:p-8">
       <h2 className="text-center text-4xl font-bold text-white  py-5">My Projects</h2>
-      <ul ref={ref} className="grid py-7 md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid py-7 md:grid-cols-3 gap-8 lg:px-12">
         {projectData.map((project, index) => (
           <motion.li
             key={index}
