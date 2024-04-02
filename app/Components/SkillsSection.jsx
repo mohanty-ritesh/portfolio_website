@@ -29,7 +29,7 @@ const SkillsSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="skills" className="min-h-screen bg-[#272727] px-12 ">
+    <section id="skills" className="min-h-screen bg-[#272727] lg:px-12 ">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">
           My Skills
@@ -45,7 +45,7 @@ const SkillsSection = () => {
           {skillData.map((skill, index) => (
             <motion.div
               key={index}
-              className="rounded-lg shadow-md px-4 py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af]"
+              className="rounded-lg  shadow-md px-4 py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af]"
             >
               <img
                 src={skill.img}
