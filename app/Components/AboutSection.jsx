@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton"; // Assuming TabButton is a separate component
@@ -116,33 +116,41 @@ function AboutSection() {
           className="md:mr-8"
         >
           <h2 className="text-5xl font-bold text-white mb-8">About Me</h2>
-          <p className="text-base lg:text-lg">
-            Lorem, ipslorem4um Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, optio. dolor sit amet consectetur adipisicing elit. Animi libero aperiam similique fuga a labore reiciendis perferendis eum aliquam blanditiis ad eligendi in, iure expedita voluptate accusantium! Ea, odio repudiandae.
-          </p>
-          <div className="flex flex-row mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("Education")}
-              active={tab === "Education"}
-            >
-              Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("Experience")}
-              active={tab === "Experience"}
-            >
-              Experience
-            </TabButton>
-          </div>
-          <div className="timeline mt-8">
-            <AnimatePresence>
-              {Tab_Data.find((t) => t.id === tab).content.map((item, index) => (
-                <TimelineEntry
-                  key={index}
-                  date={item.date}
-                  text={item.text}
-                />
-              ))}
-            </AnimatePresence>
+          <div className="  lg:pt-5 pt-10">
+            <p className="text-base lg:text-lg">
+              Lorem, ipslorem4um Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Repellat, optio. dolor sit amet consectetur
+              adipisicing elit. Animi libero aperiam similique fuga a labore
+              reiciendis perferendis eum aliquam blanditiis ad eligendi in, iure
+              expedita voluptate accusantium! Ea, odio repudiandae.
+            </p>
+            <div className="flex flex-row mt-8">
+              <TabButton
+                selectTab={() => handleTabChange("Education")}
+                active={tab === "Education"}
+              >
+                Education
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("Experience")}
+                active={tab === "Experience"}
+              >
+                Experience
+              </TabButton>
+            </div>
+            <div className="timeline mt-8">
+              <AnimatePresence>
+                {Tab_Data.find((t) => t.id === tab).content.map(
+                  (item, index) => (
+                    <TimelineEntry
+                      key={index}
+                      date={item.date}
+                      text={item.text}
+                    />
+                  )
+                )}
+              </AnimatePresence>
+            </div>
           </div>
         </motion.div>
       </div>

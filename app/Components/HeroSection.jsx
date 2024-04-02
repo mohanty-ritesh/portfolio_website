@@ -2,18 +2,23 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
     <section className="h-[86vh] flex justify-center ">
       <div className="grid grid-cols-1 sm:grid-cols-12 ">
-        <motion.div initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}} transition={{duration:0.3}} className="col-span-7 place-self-center text-center pl-7  sm:text-left">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          className="col-span-7 place-self-center text-center pl-7  sm:text-left"
+        >
           <h1 className="text-white mb-4 text-5xl sm:text-6xl lg:text-8xl xl:text-8xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fddd58]  to-[#fd914d]">
               Hello, I'm{" "}
             </span>
-            <br/>
+            <br />
             <TypeAnimation
               sequence={[
                 "Ritesh Mohanty.",
@@ -42,19 +47,23 @@ function HeroSection() {
             Download my cv
           </button>
         </motion.div>
-        <div className="col-span-5 place-self-center pl-6 mt-4 ml-3 lg:mt-0">
-<motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.2}} className="rounded-full cursor-pointer bg-[#181818] hover:bg-[#3c3c3c4e]  w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] relative">
-  <Image
-    src="/Images/reps.png"
-    alt="heroimg"
-    className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 pb-20"
-    style={{ width: '85%' }}
-    width={300}
-    height={300}
-  />
-</motion.div>
+       <div className="col-span-5 place-self-center pl-6 mt-4 ml-3 lg:mt-0 overflow-hidden">
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.2 }}
+    className="rounded-full  sm:block bg-[#181818]   w-[300px] h-[300px] md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[400px] relative overflow-visible"
+  >
+    <Image
+      src="/Images/reps.png"
+      alt="heroimg"
+      className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-60 h-65 sm:w-60 sm:h-65 md:w-60 md:h-65 lg:w-95 lg:h-100 xl:w-96 xl:h-101"
+      width={350}
+      height={350}
+    />
+  </motion.div>
+</div>
 
-        </div>
       </div>
     </section>
   );
