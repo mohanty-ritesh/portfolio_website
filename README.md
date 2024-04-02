@@ -8,3 +8,9 @@ This portfolio is built using:
 * **[Add other technologies you used, e.g., React, CSS framework (Tailwind CSS, Bootstrap, etc.)]**
 
 For styling, I've used [CSS framework name], ensuring responsiveness and a consistent visual experience.
+
+hi
+about
+skills
+project
+get in touch

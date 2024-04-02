@@ -20,26 +20,18 @@ const Footer = () => {
           <ul className="list-none mt-4">
             <li>
               <a
-                href="#hithere"
+                href="#hi"
                 className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
-                Hi, There
+                Hello!
               </a>
             </li>
             <li>
               <a
-                href="#about"
+                href="#about_me"
                 className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#education"
-                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
-              >
-                Education
+                About Me
               </a>
             </li>
             <li>
@@ -56,6 +48,14 @@ const Footer = () => {
                 className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
                 Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#get_in_touch"
+                className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
+              >
+                Lets Connect..
               </a>
             </li>
           </ul>

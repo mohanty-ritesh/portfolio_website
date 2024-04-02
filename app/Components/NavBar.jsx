@@ -8,10 +8,11 @@ import MenuOverlay from "./MenuOverlay";
 import { motion } from "framer-motion";
 
 const NavLinks = [
-  { title: "about", path: "#about" },
-  { title: "services", path: "#services" },
-  { title: "portfolio", path: "#portfolio" },
-  { title: "contact", path: "#contact" },
+  { title: "Hello!", path: "#hi" },
+  { title: "About Me", path: "#about_me" },
+  { title: "Skills", path: "#skills" },
+  { title: "Projects", path: "#projects" },
+  { title: "Lets Connect..", path: "#get_in_touch" }
 ];
 
 const NavBar = () => {
@@ -59,7 +60,7 @@ const NavBar = () => {
           className="menu hidden md:block md:w-auto"
           id="navbar"
         >
-          <ul className="flex md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex md:p-0 md:flex-row md:space-x-5 ">
             {NavLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
