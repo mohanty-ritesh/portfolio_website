@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="h-[86vh] flex justify-center pt-18 lg:pt-2 ">
+    <section className="h-[95vh] flex justify-center pt-18 lg:pt-2 ">
       <div className="grid grid-cols-1 sm:grid-cols-12 ">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -48,7 +48,7 @@ function HeroSection() {
             Download my cv
           </button>
         </motion.div>
-        <div className="col-span-5 place-self-center pb-4 mt-auto  ml-3 lg:mt-0 overflow-hidden">
+        <div className="col-span-5 place-self-center py-5 mt-auto  ml-3 lg:mt-0 overflow-hidden">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -59,8 +59,8 @@ function HeroSection() {
               src="/Images/reps.png"
               alt="heroimg"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-60 h-65 sm:w-60 sm:h-65 md:w-60 md:h-65 lg:w-95 lg:h-100 xl:w-96 xl:h-101"
-              width={350}
-              height={350}
+              width={340}
+              height={340}
             />
           </motion.div>
         </div>
