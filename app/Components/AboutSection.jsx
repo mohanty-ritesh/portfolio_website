@@ -92,7 +92,7 @@ function AboutSection() {
   };
 
   return (
-    <section className="text-white h-[95vh]">
+    <section className="text-white h-auto">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <motion.div
           className="md:mr-8"
