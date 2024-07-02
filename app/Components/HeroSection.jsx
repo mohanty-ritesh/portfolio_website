@@ -14,7 +14,7 @@ function HeroSection() {
           transition={{ duration: 0.3 }}
           className="col-span-7 place-self-center text-center pl-7  sm:text-left"
         >
-          <h1 className="text-white mb-4  text-4xl sm:text-4xl p-auto lg:text-8xl xl:text-8xl font-extrabold">
+          <h1 className="text-white mb-4   text-4xl sm:text-4xl sm:mb-1 p-auto lg:text-8xl xl:text-8xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fddd58]  to-[#fd914d]">
               Hello, I'm{" "}
             </span>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
       <NavBar />
-      <div id="hi" className="container mx-auto xl:px-12 py-4 mt-24 bg-[#1E1C2094] rounded-md">
+      <div id="hi" className="container mx-auto xl:px-12 py-8 mt-24 bg-[#1E1C2094] rounded-md">
         <HeroSection />
       </div>
       <div id="about_me" className="container mx-auto    bg-[#212022]  rounded-md"> <AboutSection /></div>

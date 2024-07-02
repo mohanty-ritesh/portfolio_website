@@ -55,7 +55,7 @@ const Footer = () => {
                 href="#get_in_touch"
                 className="text-lg hover:text-[#935fade8] transition duration-300 ease-in-out"
               >
-                Lets Connect..
+                Lets Connect...
               </a>
             </li>
           </ul>

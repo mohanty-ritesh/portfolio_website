@@ -40,9 +40,9 @@ const EmailSection = () => {
         initial="initial"
         animate={isInView ? "animate" : "initial"}
         transition={{ duration: 0.3 }}
-        className="border-4 w-full h-[76%] border-[#17131372] px-5 lg:h-[80%] lg:w-[40%] sm:h-[65%] sm:w-[50%] py-8 shadow-[#17131372] bg-[#e4dce4ca]  shadow-md flex flex-col justify-center items-center  sm:px-8 md:px-12 lg:px-16 xl:px-20 rounded-xl "
+        className="border-4 w-full  border-[#17131372]  px-[6%] lg:h-[90%] lg:w-[40%] sm:h-[80%] sm:w-[50%] py-8 shadow-[#17131372] bg-[#e4dce4ca]  shadow-md flex flex-col justify-center items-center     rounded-xl "
       >
-        <div className="xl:text-4xl text-2xl md:text-3xl text-left text-[#152123]  font-bold mb-8  "><h1 >Get in Touch...</h1> </div>
+        <div className="xl:text-4xl text-2xl md:text-3xl text-left text-[#152123]  font-bold mb-7  "><h1 >Get in Touch...</h1> </div>
         <input className="text-xl bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='namee' type="text" id="namee" placeholder="Your name" required />
         <input className="text-xl bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='email' type="email" id="email" placeholder="Your email" required />
         <input className="text-xl bg-[#cecbcdde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='phone' type="text" id="phone" placeholder="Your Phone no." required />
