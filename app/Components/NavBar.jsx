@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <nav className="fixed top-0 pt-2 left-0 right-0 z-10 bg-inherit  xl:px-8">
-      <div className="flex flex-wrap items-center justify-between mx-auto xl:px-4 py-2">
+      <div className="flex flex-wrap items-center justify-between mx-auto xl:px-4 ">
         {/* Replace with your logo image */}
         <Link href="/">
           <img

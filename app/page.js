@@ -12,7 +12,7 @@ export default function Home() {
       <div id="hi" className="container mx-auto xl:px-12 py-4 mt-24 bg-[#1E1C2094] rounded-md">
         <HeroSection />
       </div>
-      <div id="about_me" className="container mx-auto  py-4  bg-[#212022]  rounded-md"> <AboutSection /></div>
+      <div id="about_me" className="container mx-auto    bg-[#212022]  rounded-md"> <AboutSection /></div>
       <div id="skills" className="container mx-auto    bg-[#212022]  rounded-md"> <SkillsSection /></div>
       <div id="projects" className="container mx-auto px-10 py-4  bg-[#212022]  rounded-md"> <ProjectSection /></div>
       <div id="get_in_touch" className="container mx-auto    bg-[#212022]  rounded-md"> <EmailSection /></div>

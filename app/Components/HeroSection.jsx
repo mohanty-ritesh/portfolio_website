@@ -36,9 +36,10 @@ function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] py-5 text-base sm:text-lg lg:text-xl xl:text-xl mb-6">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-            sint enim, velit ipsum libero est! Aliquid unde aperiam voluptatem
-            officia!
+            Hello! I'm Ritesh, a passionate and dedicated MERN stack developer
+            with a strong foundation in web application development.
+            Welcome to my portfolio. Scroll down to discover more about my projects, skills. Let's connect and create something amazing together !😊 
+
           </p>
           <button className="px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-[#fddd58]  to-[#fd914d]  hover:bg-slate-200 sm:w-fit text-slate-800 font-bold">
             Hire Me
@@ -47,23 +48,22 @@ function HeroSection() {
             Download my cv
           </button>
         </motion.div>
-       <div className="col-span-5 place-self-center pb-4 mt-auto  ml-3 lg:mt-0 overflow-hidden">
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.2 }}
-    className="rounded-full  sm:block   w-[230px] h-[230px]   lg:w-[350px] lg:h-[400px] relative "
-  >
-    <Image
-      src="/Images/reps.png"
-      alt="heroimg"
-      className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-60 h-65 sm:w-60 sm:h-65 md:w-60 md:h-65 lg:w-95 lg:h-100 xl:w-96 xl:h-101"
-      width={350}
-      height={350}
-    />
-  </motion.div>
-</div>
-
+        <div className="col-span-5 place-self-center pb-4 mt-auto  ml-3 lg:mt-0 overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.2 }}
+            className="rounded-full  sm:block   w-[230px] h-[230px]   lg:w-[350px] lg:h-[400px] relative "
+          >
+            <Image
+              src="/Images/reps.png"
+              alt="heroimg"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-60 h-65 sm:w-60 sm:h-65 md:w-60 md:h-65 lg:w-95 lg:h-100 xl:w-96 xl:h-101"
+              width={350}
+              height={350}
+            />
+          </motion.div>
+        </div>
       </div>
     </section>
   );

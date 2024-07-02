@@ -92,7 +92,7 @@ function AboutSection() {
   };
 
   return (
-    <section className="text-white h-[85vh]">
+    <section className="text-white h-[95vh]">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <motion.div
           className="md:mr-8"
@@ -118,11 +118,17 @@ function AboutSection() {
           <h2 className="text-5xl font-bold text-white xl:mb-5">About Me</h2>
           <div className="  lg:pt-5 pt-10">
             <p className="text-base lg:text-lg">
-              Lorem, ipslorem4um Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Repellat, optio. dolor sit amet consectetur
-              adipisicing elit. Animi libero aperiam similique fuga a labore
-              reiciendis perferendis eum aliquam blanditiis ad eligendi in, iure
-              expedita voluptate accusantium! Ea, odio repudiandae.
+              As a recent graduate, I am always on the lookout for new
+              technologies and programming languages to expand my skill set. My
+              journey in the tech world has been driven by a curiosity to
+              understand how things work and a desire to create innovative
+              solutions. I pride myself on being a Developer with a excellent
+              communication skills, which allow me to effectively collaborate
+              with team members and clients. My strong problem-solving abilities
+              enable me to tackle challenges head-on and deliver high-quality
+              results. I am committed to continuous learning and professional
+              growth, and I am eager to explore new opportunities that push the
+              boundaries of my knowledge and expertise.
             </p>
             <div className="flex flex-row mt-8">
               <TabButton
