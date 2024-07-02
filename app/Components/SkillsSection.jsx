@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const skillData = [
-  { name: "C++", img: "https://drive.google.com/file/d/1SI2XevkONBGTWy_mVkDml0YdlBmlV9xK/view?usp=drive_link" },
+  { name: "C++", img: "/Images/c++.png" },
   { name: "JavaScript", img: "/Images/js.png" },
   { name: "HTML", img: "/Images/html.png" },
   { name: "CSS", img: "/Images/css.png" },
@@ -39,18 +39,18 @@ const SkillsSection = () => {
           variants={skillsVariants} // Use skillsVariants here
           initial="initial"
           animate={isInView ? "animate" : "initial"} // Use skillsVariants here
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.5 }}
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center py-5 "
         >
           {skillData.map((skill, index) => (
             <motion.div
               key={index}
-              className="rounded-lg  shadow-md px-4 py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af]"
+              className="rounded-lg  shadow-lg px-4 py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af]"
             >
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="mx-auto mb-2 h-12 w-12 "
+                className="mx-auto mb-2 h-13 w-12 "
               />
               <h3 className="text-xl font-medium text-white">{skill.name}</h3>
             </motion.div>
