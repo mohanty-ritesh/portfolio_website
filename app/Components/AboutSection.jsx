@@ -10,12 +10,12 @@ const Tab_Data = [
     id: "Education",
     content: [
       {
-        date: "April 2019",
-        text: "The launch of Aryacoin; AYA ICO, resulting in over 30BTC collected",
+        date: "2020",
+        text: "Completed My High School From The Adarsh School ",
       },
       {
-        date: "May 2020",
-        text: "Graduated from University with a degree in Computer Science",
+        date: "2024",
+        text: "Completed My Graduation From Delhi Global Institute of Technology ",
       },
     ],
   },
@@ -24,12 +24,12 @@ const Tab_Data = [
     id: "Experience",
     content: [
       {
-        date: "June 2020",
-        text: "Software Engineer Internship at Tech Company",
+        date: "2023",
+        text: "Completed My MEARN STACK Certification",
       },
       {
-        date: "July 2021",
-        text: "Full-time Software Engineer at Startup",
+        date: "...",
+        text: "...",
       },
     ],
   },
@@ -112,17 +112,17 @@ function AboutSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.7 }}
           className="md:mr-8"
         >
           <h2 className="text-5xl font-bold text-white xl:mb-5">About Me</h2>
-          <div className="  lg:pt-5 pt-10">
+          <div className="lg:pt-5 pt-10">
             <p className="text-base lg:text-lg">
               As a recent graduate, I am always on the lookout for new
               technologies and programming languages to expand my skill set. My
               journey in the tech world has been driven by a curiosity to
               understand how things work and a desire to create innovative
-              solutions. I pride myself on being a Developer with a excellent
+              solutions. I pride myself on being a Developer with excellent
               communication skills, which allow me to effectively collaborate
               with team members and clients. My strong problem-solving abilities
               enable me to tackle challenges head-on and deliver high-quality
@@ -145,7 +145,7 @@ function AboutSection() {
               </TabButton>
             </div>
             <div className="timeline mt-8">
-              <AnimatePresence>
+              <AnimatePresence key={tab}>
                 {Tab_Data.find((t) => t.id === tab).content.map(
                   (item, index) => (
                     <TimelineEntry

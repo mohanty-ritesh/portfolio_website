@@ -41,12 +41,33 @@ function HeroSection() {
             Welcome to my portfolio. Scroll down to discover more about my projects, skills. Let's connect and create something amazing together !😊 
 
           </p>
-          <button className="px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-[#fddd58]  to-[#fd914d]  hover:bg-slate-200 sm:w-fit text-slate-800 font-bold">
-            Hire Me
-          </button>
-          <button className="px-6 py-3 rounded-full mr-4 bg-transparent text-white border border-white hover:bg-slate-800 hover:border-gray-300 sm:w-fit mt-3 transition-colors duration-250">
-            Download my cv
-          </button>
+          <button
+  className="px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-[#fddd58] to-[#fd914d] hover:bg-slate-200 sm:w-fit text-slate-800 font-bold"
+  onClick={() => {
+    const targetElement = document.getElementById("get_in_touch");
+    if (targetElement) {
+      const offset = 70; // Adjust this value based on your fixed header height
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  }}
+>
+  Hire Me
+</button>
+<a
+  href="/Images/RITESH RESUME.pdf"
+  download="RITESH RESUME.pdf"
+  className="px-6 py-3 rounded-full mr-4 bg-transparent text-white border border-white hover:bg-slate-800 hover:border-gray-300 sm:w-fit mt-3 transition-colors duration-250 inline-block text-center"
+>
+  Download my CV
+</a>
+
+
         </motion.div>
         <div className="col-span-5 place-self-center py-5 mt-auto  ml-3 lg:mt-0 overflow-hidden">
           <motion.div
