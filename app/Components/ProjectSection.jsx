@@ -6,35 +6,35 @@ import { motion, useInView } from "framer-motion";
 const projectData = [
   {
     id: 1,
-    title: "proj 1",
+    title: "Heartz",
     description: "this is proj 1",
     image: "/Images/logo2.png",
     tag: ["All", "Web"],
-    gitUrl: "/"
+    gitUrl: "https://github.com/mohanty-ritesh/final-Heartz"
+  },
+  {
+    id: 2,
+    title: "My Portfolio",
+    description: "this is proj 2",
+    image: "/Images/portfoliopic.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/mohanty-ritesh/portfolio_website"
   },
   {
     id: 1,
-    title: "proj 1",
-    description: "this is proj 1",
-    image: "/Images/logo2.png",
+    title: "Chess website",
+    description: "this is proj 3",
+    image: "/Images/chess.png",
     tag: ["All", "Web"],
-    gitUrl: "/"
+    gitUrl: ""
   },
   {
     id: 1,
-    title: "proj 1",
-    description: "this is proj 1",
-    image: "/Images/logo2.png",
+    title: "Kanban Board",
+    description: "this is proj 4",
+    image: "/Images/kanban.png",
     tag: ["All", "Web"],
-    gitUrl: "/"
-  },
-  {
-    id: 1,
-    title: "proj 1",
-    description: "this is proj 1",
-    image: "/Images/logo2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/"
+    gitUrl: "https://github.com/mohanty-ritesh/Front-end-Assignment"
   }  // other project data...
 ];
 
