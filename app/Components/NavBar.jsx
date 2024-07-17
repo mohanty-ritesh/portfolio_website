@@ -30,7 +30,8 @@ const NavBar = () => {
         window.scrollTo({
           top: offsetPosition,
           behavior: "smooth"
-        });
+          
+        });        
       }
     };
 
