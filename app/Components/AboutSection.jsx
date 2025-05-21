@@ -102,7 +102,7 @@ function AboutSection() {
           exit="exit"
         >
           <Image
-            src="/Images/myimg-removebg-preview.png"
+            src="/Images/mydp.png"
             width={300}
             height={300}
             className="rounded-full hidden  md:block md:w-80 xl:w-[400px]  md:pl-13 lg:block xl:block "
