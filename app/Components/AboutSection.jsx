@@ -102,7 +102,7 @@ function AboutSection() {
           exit="exit"
         >
           <Image
-            src="/Images/mydp.png"
+            src="/Images/Mydp.png"
             width={300}
             height={300}
             className="rounded-full hidden  md:block md:w-80 xl:w-[400px]  md:pl-13 lg:block xl:block "
