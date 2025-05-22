@@ -21,38 +21,64 @@ const skillData = [
 ];
 
 const SkillsSection = () => {
-  const skillsVariants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  const gridContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15, // Stagger animation of children
+        delayChildren: 0.2,   // Optional: delay before children start animating
+      },
+    },
+  };
+
+  const skillItemVariants = {
+    hidden: { y: 20, opacity: 0, scale: 0.9 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <section id="skills" className="min-h-screen bg-[#272727] lg:px-12 ">
-      <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-white mb-8 text-center">
+    <section id="skills" className="min-h-screen bg-[#272727] py-16 px-4 sm:px-6 lg:px-12">
+      <div className="container mx-auto">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-3xl sm:text-4xl font-bold text-white mb-8 md:mb-12 text-center"
+        >
           My Skills
-        </h1>
+        </motion.h1>
         <motion.div
           ref={ref}
-          variants={skillsVariants} // Use skillsVariants here
-          initial="initial"
-          animate={isInView ? "animate" : "initial"} // Use skillsVariants here
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 justify-center py-5 "
+          variants={gridContainerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 justify-center py-5"
         >
           {skillData.map((skill, index) => (
             <motion.div
               key={index}
-              className="rounded-lg  shadow-lg px-4 py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af]"
+              variants={skillItemVariants} // Apply variants to each skill item
+              // initial and animate states will be inherited from the parent gridContainerVariants
+              className="rounded-lg shadow-lg px-3 py-5 sm:px-4 sm:py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af] flex flex-col items-center justify-center"
             >
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="mx-auto mb-2 h-13 w-12 "
+                className="mx-auto mb-2 h-12 w-12 object-contain" // Standardized h-12, added object-contain
               />
-              <h3 className="text-xl font-medium text-white">{skill.name}</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-medium text-white mt-2">{skill.name}</h3>
             </motion.div>
           ))}
         </motion.div>
