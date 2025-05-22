@@ -5,9 +5,11 @@ import ProjectSection from "./Components/ProjectSection";
 import EmailSection from "./Components/EmailSection";
 import SkillsSection from "./Components/SkillsSection";
 import Footer from "./Components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
+      <Analytics />
       <NavBar />
       <div id="hi" className="container mx-auto xl:px-12 py-8 mt-24 bg-[#1E1C2094] rounded-md">
         <HeroSection />
