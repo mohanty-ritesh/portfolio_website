@@ -56,11 +56,11 @@ const EmailSection = () => {
         <div className="xl:text-4xl text-2xl md:text-3xl text-left text-[#152123] font-bold mb-7">
           <h1>Get in Touch...</h1>
         </div>
-        <input className="text-xl bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='namee' type="text" id="namee" placeholder="Your name" required />
-        <input className="text-xl bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='email' type="email" id="email" placeholder="Your email" required />
-        <input className="text-xl bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='phone' type="text" id="phone" placeholder="Your Phone no." required />
-        <textarea className="bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-3 px-3 resize-none placeholder-gray-600 w-full" name='message' id="message" placeholder="Say Hi..." ></textarea>
-        <input className="border-2 border-[#630817] font-bold rounded-3xl bg-[#f25454] text-[#630817] px-8 py-2 my-5 hover:cursor-pointer" type="button" value="Button" onClick={handleSubmit} />
+        <motion.input whileFocus={{ scale: 1.02, borderColor: "#fd914d", boxShadow: "0 0 8px rgba(253, 145, 77, 0.5)" }} transition={{ duration: 0.2 }} className="text-xl bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='namee' type="text" id="namee" placeholder="Your name" required />
+        <motion.input whileFocus={{ scale: 1.02, borderColor: "#fd914d", boxShadow: "0 0 8px rgba(253, 145, 77, 0.5)" }} transition={{ duration: 0.2 }} className="text-xl bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='email' type="email" id="email" placeholder="Your email" required />
+        <motion.input whileFocus={{ scale: 1.02, borderColor: "#fd914d", boxShadow: "0 0 8px rgba(253, 145, 77, 0.5)" }} transition={{ duration: 0.2 }} className="text-xl bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-4 px-3 placeholder-gray-600 w-full" name='phone' type="text" id="phone" placeholder="Your Phone no." required />
+        <motion.textarea whileFocus={{ scale: 1.02, borderColor: "#fd914d", boxShadow: "0 0 8px rgba(253, 145, 77, 0.5)" }} transition={{ duration: 0.2 }} className="bg-[#eeeaedde] border-2 border-black rounded-lg outline-none text-[#2c2c2e] mb-4 py-3 px-3 resize-none placeholder-gray-600 w-full" name='message' id="message" placeholder="Say Hi..." ></motion.textarea>
+        <motion.input whileHover={{ scale: 1.05, backgroundColor: "#f04040" }} whileTap={{ scale: 0.95 }} transition={{ type: "spring", stiffness: 300, damping: 10 }} className="border-2 border-[#630817] font-bold rounded-3xl bg-[#f25454] text-[#630817] px-8 py-2 my-5 hover:cursor-pointer" type="button" value="Button" onClick={handleSubmit} />
       </motion.form>
       {showErrorPopup && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">

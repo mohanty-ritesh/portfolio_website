@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 
 function HeroSection() {
   return (
-    <section className="h-[95vh] flex justify-center pt-18 lg:pt-2 ">
-      <div className="grid grid-cols-1 sm:grid-cols-12 ">
+    <section className="h-auto min-h-[90vh] flex items-center justify-center py-16 lg:py-20">
+      <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3 }}
-          className="col-span-7 place-self-center text-center pl-7  sm:text-left"
+          className="col-span-12 sm:col-span-7 place-self-center text-center sm:text-left px-4 sm:px-0 sm:pl-7"
         >
-          <h1 className="text-white mb-4   text-4xl sm:text-4xl sm:mb-1 p-auto lg:text-8xl xl:text-8xl font-extrabold">
+          <h1 className="text-white mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fddd58]  to-[#fd914d]">
               Hello, I'm{" "}
             </span>
@@ -41,47 +41,48 @@ function HeroSection() {
             Welcome to my portfolio. Scroll down to discover more about my projects, skills. Let's connect and create something amazing together !😊 
 
           </p>
-          <button
-  className="px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-[#fddd58] to-[#fd914d] hover:bg-slate-200 sm:w-fit text-slate-800 font-bold"
-  onClick={() => {
-    const targetElement = document.getElementById("get_in_touch");
-    if (targetElement) {
-      const offset = 70; // Adjust this value based on your fixed header height
-      const elementPosition = targetElement.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
-  }}
->
-  Hire Me
-</button>
-<a
-  href="/Images/RITESH RESUME.pdf"
-  download="RITESH RESUME.pdf"
-  className="px-6 py-3 rounded-full mr-4 bg-transparent text-white border border-white hover:bg-slate-800 hover:border-gray-300 sm:w-fit mt-3 transition-colors duration-250 inline-block text-center"
->
-  Download my CV
-</a>
-
-
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#fddd58] to-[#fd914d] hover:bg-slate-200 text-slate-800 font-bold"
+              onClick={() => {
+                const targetElement = document.getElementById("get_in_touch");
+                if (targetElement) {
+                  const offset = 70; 
+                  const elementPosition = targetElement.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - offset;
+                  window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                }
+              }}
+            >
+              Hire Me
+            </motion.button>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              href="/Images/RITESH RESUME.pdf"
+              download="RITESH RESUME.pdf"
+              className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent text-white border border-white hover:bg-slate-800 hover:border-gray-300 transition-colors duration-250 inline-block text-center"
+            >
+              Download my CV
+            </motion.a>
+          </div>
         </motion.div>
-        <div className="col-span-5 place-self-center py-5 mt-auto  ml-3 lg:mt-0 overflow-hidden">
+        <div className="col-span-12 sm:col-span-5 place-self-center mt-8 sm:mt-0">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
-            className="rounded-full  sm:block   w-[230px] h-[230px]   lg:w-[350px] lg:h-[400px] relative "
+            className="rounded-full bg-[#181818] w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[380px] lg:h-[380px] relative overflow-hidden"
           >
             <Image
               src="/Images/reps.png"
               alt="heroimg"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2  w-60 h-65 sm:w-60 sm:h-65 md:w-60 md:h-65 lg:w-95 lg:h-100 xl:w-96 xl:h-101"
-              width={340}
-              height={340}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              width={320} // Adjusted base width
+              height={320} // Adjusted base height
+              priority // Added for LCP
             />
           </motion.div>
         </div>
