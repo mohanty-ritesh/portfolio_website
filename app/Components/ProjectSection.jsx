@@ -40,7 +40,7 @@ const projectData = [
 
 const cardVariants = {
   initial: { y: 50, opacity: 0 },
-  animate: { y: 0, opacity: 1 }
+  animate: { y: 0, opacity: 1, transition: { duration: 0.4, ease: "easeOut" } } // Added ease and duration
 };
 
 function ProjectSection() {
@@ -51,13 +51,14 @@ function ProjectSection() {
     <section className="py-12 lg:p-8">
       <h2 className="text-center text-4xl font-bold text-white py-5">My Projects</h2>
       <ul ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-6 md:px-8 lg:px-12 py-7">
+
         {projectData.map((project, index) => (
           <motion.li
             key={index}
-            variants={cardVariants} // Use cardVariants here
+            variants={cardVariants} 
             initial="initial"
-            animate={isInView ? "animate" : "initial"} // Use cardVariants here
-            transition={{duration:0.3, delay:index*0.4}}
+            animate={isInView ? "animate" : "initial"} 
+            transition={{ delay: index * 0.2 }} // Stagger delay for each card
           >
             <ProjectCard
               Title={project.title}

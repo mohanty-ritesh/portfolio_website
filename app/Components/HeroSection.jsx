@@ -1,10 +1,44 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 
 function HeroSection() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const textContainerVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const textItemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+  };
+
   return (
     <section className="h-auto min-h-[90vh] flex items-center justify-center py-16 lg:py-20">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
@@ -16,6 +50,7 @@ function HeroSection() {
         >
           <h1 className="text-white mb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fddd58]  to-[#fd914d]">
+
               Hello, I'm{" "}
             </span>
             <br />
@@ -34,17 +69,14 @@ function HeroSection() {
               speed={50}
               repeat={Infinity}
             />
-          </h1>
-          <p className="text-[#ADB7BE] py-5 text-base sm:text-lg lg:text-xl xl:text-xl mb-6">
-            Hello! I'm Ritesh, a passionate and dedicated MERN stack developer
-            with a strong foundation in web application development.
-            Welcome to my portfolio. Scroll down to discover more about my projects, skills. Let's connect and create something amazing together !😊 
+          </motion.h1>
 
           </p>
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
+
               className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#fddd58] to-[#fd914d] hover:bg-slate-200 text-slate-800 font-bold"
               onClick={() => {
                 const targetElement = document.getElementById("get_in_touch");
@@ -53,6 +85,7 @@ function HeroSection() {
                   const elementPosition = targetElement.getBoundingClientRect().top;
                   const offsetPosition = elementPosition + window.pageYOffset - offset;
                   window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+
                 }
               }}
             >
@@ -61,6 +94,7 @@ function HeroSection() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
+
               href="/Images/RITESH RESUME.pdf"
               download="RITESH RESUME.pdf"
               className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent text-white border border-white hover:bg-slate-800 hover:border-gray-300 transition-colors duration-250 inline-block text-center"
@@ -75,6 +109,7 @@ function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
             className="rounded-full bg-[#181818] w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[380px] lg:h-[380px] relative overflow-hidden"
+
           >
             <Image
               src="/Images/reps.png"
@@ -83,10 +118,11 @@ function HeroSection() {
               width={320} // Adjusted base width
               height={320} // Adjusted base height
               priority // Added for LCP
+
             />
           </motion.div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

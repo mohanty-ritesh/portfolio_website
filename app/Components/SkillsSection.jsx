@@ -35,6 +35,31 @@ const SkillsSection = () => {
     animate: { opacity: 1, y: 0 },
   };
 
+
+  const gridContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15, // Stagger animation of children
+        delayChildren: 0.2,   // Optional: delay before children start animating
+      },
+    },
+  };
+
+  const skillItemVariants = {
+    hidden: { y: 20, opacity: 0, scale: 0.9 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
     <section id="skills" className="min-h-screen bg-[#272727] lg:px-12 ">
       <div ref={sectionRef} className="container mx-auto px-4 py-16">
@@ -49,6 +74,7 @@ const SkillsSection = () => {
         </motion.h1>
         <div // Grid container, not a motion component itself
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8 justify-center py-5 "
+
         >
           {skillData.map((skill, index) => (
             <motion.div
@@ -63,6 +89,7 @@ const SkillsSection = () => {
                 ease: "easeOut"
               }}
               className="rounded-lg shadow-lg px-4 py-6 text-center bg-gradient-to-br from-[#9edec9d3] to-[#3f3e35af] flex flex-col items-center justify-center"
+
             >
               <motion.img
                 whileHover={{ scale: 1.15, rotate: 5 }}
@@ -72,6 +99,7 @@ const SkillsSection = () => {
                 className="mx-auto mb-3 h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16" // Responsive icon size
               />
               <h3 className="text-lg sm:text-xl font-medium text-white mt-2">{skill.name}</h3>
+
             </motion.div>
           ))}
         </div>
